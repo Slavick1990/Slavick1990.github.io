@@ -13,8 +13,12 @@
         <abbr title="Cascading Style Sheets">CSS</abbr> И JavaScript, он создан только при помощи
         <abbr title="Hypertext Markup Language">HTML</abbr></p>
     </strong></p>
-    <a href="https://Slavick1990.github.io/index.html"> <h1>Кино.бай</h1></a>
+    <a href="https://Slavick1990.github.io/index.html"><h1>Кино.бай</h1></a>
     <p>Кино на любой вкус</p>
+    <form>
+        <input type="search" name="searcher" placeholder="Поиск"/>
+        <input type="submit" value="Искать"/>
+    </form>
     <nav>
         <ul role="menubar" style="list-style-type: none">
             <li><a href="#">Афиша</a></li>
@@ -29,56 +33,78 @@
     <cite>Рене Клер</cite>
 </header>
 <main>
-    <h1>
-        Властелин колец
-        : Две крепости
-    </h1>
-    </header>
-    <figure>
-        <img src="img3.jpg" title="Две крепости" alt="Обложка фильма">
-        <figcaption>Две крепости</figcaption>
-    </figure>
-    <section>
-        <h1>Описание</h1>
-        <p>Братство распалось, но Кольцо Всевластья должно быть уничтожено. Фродо и Сэм вынуждены доверить свои
-            жизни <br/>
-            Голлуму, который взялся провести их к вратам Мордора. Громадная Армия Сарумана приближается: члены
-            братства и <br/>
-            их союзники готовы принять бой.
-    </section>
-    <section>
-        <h1>Актеры</h1>
-        <p>Элайджа Вуд,Шон Эстин,Орландо Блум,Вигго Мортенсен,Иэн МакКеллен,Доминик Монахэн,
-            Миранда Отто, Джон<br/> Рис-Дэвис, Энди Серкис, Билли Бойд</p>
-    </section>
-    <section>
-        <h1>Трейлер фильма</h1>
-        <iframe width="854" height="480" src="https://www.youtube.com/embed/HceZj-mOrMo" frameborder="0"
-                allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        <table border="1">
-            <caption>Информация</caption>
-            <thead>
-            <tr>
-                <th>Год</th>
-                <th>Оценка</th>
-                <th>Бюджет</th>
-                <th>Страна</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td>2002</td>
-                <td>8.70
-                    <small>(1 221 214)</small>
-                </td>
-                <td>$94 000 000</td>
-                <td>США</td>
-            </tr>
-            </tbody>
-        </table>
-        <br/>
-    </section>
+    <article>
+        <header>
+            <h1>
+                Властелин колец
+                : Две крепости
+            </h1>
+        </header>
+        <figure>
+            <img src="img3.jpg" title="Две крепости" alt="Обложка фильма">
+            <figcaption>Две крепости</figcaption>
+        </figure>
+        <section>
+            <h1>Описание</h1>
+            <p>Братство распалось, но Кольцо Всевластья должно быть уничтожено. Фродо и Сэм вынуждены доверить свои
+                жизни <br/>
+                Голлуму, который взялся провести их к вратам Мордора. Громадная Армия Сарумана приближается: члены
+                братства и <br/>
+                их союзники готовы принять бой.
+        </section>
+        <section>
+            <h1>Актеры</h1>
+            <p>Элайджа Вуд,Шон Эстин,Орландо Блум,Вигго Мортенсен,Иэн МакКеллен,Доминик Монахэн,
+                Миранда Отто, Джон<br/> Рис-Дэвис, Энди Серкис, Билли Бойд</p>
+        </section>
+        <section>
+            <h1>Трейлер фильма</h1>
+            <iframe width="854" height="480" src="https://www.youtube.com/embed/HceZj-mOrMo" frameborder="0"
+                    allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <table border="1">
+                <caption>Информация</caption>
+                <thead>
+                <tr>
+                    <th>Год</th>
+                    <th>Оценка</th>
+                    <th>Бюджет</th>
+                    <th>Страна</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>2002</td>
+                    <td>8.70
+                        <small>(1 221 214)</small>
+                    </td>
+                    <td>$94 000 000</td>
+                    <td>США</td>
+                </tr>
+                </tbody>
+            </table>
+            <br/>
+            <form action="https://Slavick1990.github.io/index.html" method="post">
+                <label for="surname">Имя Фамилия:</label><input type="text" id="surname" required/><br/><br/>
+                <label for="emale">Почта:</label><input type="email" id="emale" placeholder="example@gmail.com"
+                                                        required/><br/><br/>
+                <select autofocus>
+                    <option>Дополнительная информация</option>
+                </select>
+                <fieldset>
+                    <legend>Пол</legend>
+                    <input type="radio" id="male" name="sex"/><label for="male">Мужской</label>
+                    <input type="radio" id="female" name="sex"/><label for="female">Женский</label>
+                </fieldset>
+                <br/>
+                <input type="checkbox" id="recomend"/><label for="recomend">Буду рекомендовать фильм</label><br/>
+                <textarea name="comment" id="comment-field" rows="7" cols="50">
 
+            </textarea><br/>
+                <input type="submit" value="Добавить комментарий"/>
+            </form>
+        </section>
+    </article>
+    <br/>
 </main>
 <footer>
 
