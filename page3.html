@@ -12,10 +12,9 @@
     <p><strong>Внимание!</strong>Этот сайт не использует технологии
         <abbr title="Cascading Style Sheets">CSS</abbr> И JavaScript, он создан только при помощи
         <abbr title="Hypertext Markup Language">HTML</abbr></p>
-    </strong></p>
     <a href="https://Slavick1990.github.io/index.html"><h1>Кино.бай</h1></a>
     <p>Кино на любой вкус</p>
-    <form>
+    <form action="https://Slavick1990.github.io/index.html" method="post">
         <input type="search" name="searcher" placeholder="Поиск"/>
         <input type="submit" value="Искать"/>
     </form>
@@ -87,17 +86,17 @@
                 <label for="surname">Имя Фамилия:</label><input type="text" id="surname" required/><br/><br/>
                 <label for="emale">Почта:</label><input type="email" id="emale" placeholder="example@gmail.com"
                                                         required/><br/><br/>
-                <select autofocus>
-                    <option>Дополнительная информация</option>
-                </select>
-                <fieldset>
-                    <legend>Пол</legend>
-                    <input type="radio" id="male" name="sex"/><label for="male">Мужской</label>
-                    <input type="radio" id="female" name="sex"/><label for="female">Женский</label>
-                </fieldset>
+
+                <details open>
+                    <summary>Дополнительная информация:</summary>
+                    <fieldset>
+                        <legend>Пол</legend>
+                        <input type="radio" id="male" name="sex"/><label for="male">Мужской</label>
+                        <input type="radio" id="female" name="sex"/><label for="female">Женский</label>
+                    </fieldset>
+                </details>
                 <br/>
-                <input type="checkbox" id="recomend"/><label for="recomend">Буду рекомендовать фильм</label><br/>
-                <textarea name="comment" id="comment-field" rows="7" cols="50">
+                <textarea name="comment" rows="7" cols="50">
 
             </textarea><br/>
                 <input type="submit" value="Добавить комментарий"/>
