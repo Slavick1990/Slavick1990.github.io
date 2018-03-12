@@ -12,9 +12,12 @@
     <p><strong>Внимание!</strong>Этот сайт не использует технологии
         <abbr title="Cascading Style Sheets">CSS</abbr> И JavaScript, он создан только при помощи
         <abbr title="Hypertext Markup Language">HTML</abbr></p>
-    </strong></p>
-    <a href="https://Slavick1990.github.io/index.html"> <h1>Кино.бай</h1></a>
+    <a href="https://Slavick1990.github.io/index.html"><h1>Кино.бай</h1></a>
     <p>Кино на любой вкус</p>
+    <form action="https://Slavick1990.github.io/index.html" method="post">
+        <input type="search" name="searcher" placeholder="Поиск"/>
+        <input type="submit" value="Искать"/>
+    </form>
     <nav>
         <ul role="menubar" style="list-style-type: none">
             <li><a href="#">Афиша</a></li>
@@ -29,54 +32,77 @@
     <cite>Рене Клер</cite>
 </header>
 <main>
+    <article>
+        <header>
+            <h1>
+                Властелин колец
+                : Братство Кольца
+            </h1>
+        </header>
 
-    <h1>
-        Властелин колец
-        : Братство Кольца
-    </h1>
-    </header>
-    <figure>
-        <img src="img2.jpg" title="Братство Кольца" alt="Обложка фильма">
-        <figcaption>Братсво Кольца</figcaption>
-    </figure>
-    <section>
-        <h1>Описание</h1>
-        <p>Сказания о Средиземье — это хроника Великой войны за Кольцо, войны, длившейся не одну тысячу лет.Тот, кто
-            владел Кольцом,<br/>
-            получал власть над всеми живыми тварями, но был обязан служить злу.</p>
-    </section>
-    <section>
-        <h1>Актеры</h1>
-        <p>Элайджа Вуд, Иэн МакКеллен,Вигго Мортенсен,Шон Бин,Орландо Блум,Джон
-            Рис-Дэвис,Иэн Холм,Шон Эстин,<br/>Билли Бойд,Доминик Монахэн</p>
-    </section>
-    <section>
-        <h1>Трейлер фильма</h1>
-        <iframe width="854" height="480" src="https://www.youtube.com/embed/4BE5u9itrsY" frameborder="0"
-                allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        <table border="1">
-            <caption>Информация</caption>
-            <thead>
-            <tr>
-                <th>Год</th>
-                <th>Оценка</th>
-                <th>Бюджет</th>
-                <th>Страна</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td>2001</td>
-                <td>8.80
-                    <small>(1 389 831)</small>
-                </td>
-                <td>$93 000 000</td>
-                <td>США</td>
-            </tr>
-            </tbody>
-        </table>
-        <br/>
-    </section>
+        <figure>
+            <img src="img2.jpg" title="Братство Кольца" alt="Обложка фильма">
+            <figcaption>Братсво Кольца</figcaption>
+        </figure>
+        <section>
+            <h1>Описание</h1>
+            <p>Сказания о Средиземье — это хроника Великой войны за Кольцо, войны, длившейся не одну тысячу лет.Тот, кто
+                владел Кольцом,<br/>
+                получал власть над всеми живыми тварями, но был обязан служить злу.</p>
+        </section>
+        <section>
+            <h1>Актеры</h1>
+            <p>Элайджа Вуд, Иэн МакКеллен,Вигго Мортенсен,Шон Бин,Орландо Блум,Джон
+                Рис-Дэвис,Иэн Холм,Шон Эстин,<br/>Билли Бойд,Доминик Монахэн</p>
+        </section>
+        <section>
+            <h1>Трейлер фильма</h1>
+            <iframe width="854" height="480" src="https://www.youtube.com/embed/4BE5u9itrsY" frameborder="0"
+                    allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <table border="1">
+                <caption>Информация</caption>
+                <thead>
+                <tr>
+                    <th>Год</th>
+                    <th>Оценка</th>
+                    <th>Бюджет</th>
+                    <th>Страна</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>2001</td>
+                    <td>8.80
+                        <small>(1 389 831)</small>
+                    </td>
+                    <td>$93 000 000</td>
+                    <td>США</td>
+                </tr>
+                </tbody>
+            </table>
+            <br/>
+            <form action="https://Slavick1990.github.io/index.html" method="post">
+                <label for="surname">Имя Фамилия:</label><input type="text" id="surname" required/><br/><br/>
+                <label for="emale">Почта:</label><input type="email" id="emale" placeholder="example@gmail.com"
+                                                        required/><br/><br/>
+
+                <details open>
+                    <summary>Дополнительная информация:</summary>
+                    <fieldset>
+                        <legend>Пол</legend>
+                        <input type="radio" id="male" name="sex"/><label for="male">Мужской</label>
+                        <input type="radio" id="female" name="sex"/><label for="female">Женский</label>
+                    </fieldset>
+                </details>
+                <br/>
+                <textarea name="comment" id="comment-field" rows="7" cols="50">
+
+            </textarea><br/>
+                <input type="submit" value="Добавить комментарий"/>
+            </form>
+        </section>
+    </article>
+    <br/>
 </main>
 <footer>
 
