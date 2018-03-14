@@ -1,0 +1,17 @@
+a {
+    text-decoration-color:#f30000;
+    text-decoration-line: none;
+}
+body{
+    font-family: Tahoma;
+}
+#id{
+    color:#f60;
+}
+.markor span h1,
+.markor mark strong,
+.markor .or a,
+.markor p mark,
+.markor h1 mark{
+    color: #f60;
+}
