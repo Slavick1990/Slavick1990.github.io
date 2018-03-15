@@ -1,17 +1,38 @@
 a {
     text-decoration-color:#f30000;
     text-decoration-line: none;
+    color:inherit;
+}
+a:hover{
+    color:#f60;
+    text-decoration-line: none;
 }
 body{
-    font-family: Tahoma;
+    font-family: Tahoma; 0.8em;
+    color: #333;
 }
 #id{
     color:#f60;
 }
+#kino{
+    color:#f60;
+    text-shadow: 0.1em 0.1em #4a4a4a;
+    text-decoration-;
+}
 .markor span h1,
-.markor mark strong,
-.markor .or a,
-.markor p mark,
-.markor h1 mark{
-    color: #f60;
+ .markor mark strong,
+ .markor .or a,
+ .markor p mark,
+ .markor h1 mark{
+     color: #f60;
+ }
+figcaption{
+    font-size: 0.9em;
+}
+img {
+    height: 25em;
+}
+.search-container input
+.search-container botton {
+    font-size: 1em;
 }
