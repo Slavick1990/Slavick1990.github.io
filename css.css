@@ -14,7 +14,9 @@ body{
     user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
-    background:
+background: url("images/back.jpg") no-repeat;
+    /*background-size: cover;*/
+    background-color: #d5d5d5; ;
 }
 #kino{
     color:#f60;
@@ -40,4 +42,23 @@ img {
 }
 .search-container button{
     cursor: pointer;
+}
+.search_results{
+    background-color: white;
+    border-left: solid #f60 5px;
+}
+.picturess{
+
+}
+header{
+    border-left: solid #f60 5px;
+}
+.menubar-container{
+
+}
+mark{
+    background: transparent;
+}
+.column{
+    margin: auto 350px;
 }
