@@ -11,6 +11,10 @@ body{
     font-family: Tahoma;
     font-size: 0.8em;
     color: #333;
+    user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    background:
 }
 #kino{
     color:#f60;
@@ -30,7 +34,10 @@ figcaption{
 img {
     height: 25em;
 }
-.search-container input,
-.search-container botton {
+.search-container input[type=search],
+.search-container button {
     font-size: 1em;
+}
+.search-container button{
+    cursor: pointer;
 }
