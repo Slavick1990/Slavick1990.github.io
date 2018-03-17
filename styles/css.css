@@ -81,9 +81,10 @@ img {
     padding-top: .2em;
     padding-bottom: 0.2em;
     height: 8em;
+}
+.menubar_container ul{
     list-style-type: none;
 }
-
 .picturess {
     margin-right: 5em;
 }
