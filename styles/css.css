@@ -1,12 +1,21 @@
-a {
+a, .ufoots p {
     text-decoration-color: #d5d5d5;
     text-decoration-line: none;
     color: #d5d5d5;
 }
 
 a:hover {
-    color: #f60;
     text-decoration-line: none;
+}
+.search_results,
+.headers,
+aside span h1,
+a:hover,
+.headers h1 a,
+mark,
+section span h1,
+.triangle{
+color:#f60;
 }
 
 body {
@@ -18,9 +27,12 @@ body {
     -ms-user-select: none;
     background: url("images/back.jpg") no-repeat;
     /*background-size: cover;*/
-    background-color: #d5d5d5;;
+    background-color: #d5d5d5;
 }
 
+.res{
+color:initial;
+}
 #kino {
     color: white;
     text-shadow: 0.1em 0.1em #4a4a4a;
@@ -30,7 +42,6 @@ body {
 
 .headers h1 a,
 h1 {
-    color: #f60;
     padding-left: 0.1em;
 }
 
@@ -63,8 +74,9 @@ img {
 .search_results {
     background-color: white;
     padding-top: 1em;
-    height: 4em;
+    height: 3em;
     padding-left: 0.5em;
+    margin-top:1em;
 }
 
 .cap {
@@ -96,17 +108,17 @@ img {
 
 mark {
     background: transparent;
-    color: #f60;
+
 }
 
 .column {
     margin: auto 25em;
 }
-
+/*.search_results,*/
+.headers,
 aside span h1,
 section span h1 {
-    color: #f60;
-    border-left: solid #f60 5px;
+    border-left: solid currentColor 5px;
     padding-top: 1em;
 }
 
@@ -127,7 +139,6 @@ aside span h1,
     padding-left: 3em;
     background: linear-gradient(#f2f2f2, #dfdfdf);
     height: 3.5em;
-    border-left: solid #f60 5px;
     padding-top: 0.1em;
     padding-bottom: 0.9em;
 }
@@ -139,9 +150,9 @@ section span h1 {
     margin-top: 0.5em;
 }
 
-.foots .ufoots {
+.foots .ufoots .ufoots1{
     color: #d5d5d5;
-    text-shadow: 0.05em 0.05em #d5d5d4;
+    text-shadow: 0.05em 0.05em currentColor;
     padding-top: .5em;
 }
 
@@ -149,9 +160,10 @@ section span h1 {
     padding-top: .5em;
 }
 
-.ufoots a {
+.ufoots .ufoots1 a {
     text-decoration-line: underline;
 }
+
 
 .info1,
 .info2,
@@ -167,4 +179,16 @@ section span h1 {
 
 footer {
     margin-top: 1em;
+}
+
+.triangle::after{
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 11px solid currentColor;
+    position: relative;
+    bottom: 11px;
+    left: 5px;
 }
