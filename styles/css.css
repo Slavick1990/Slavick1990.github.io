@@ -7,15 +7,9 @@ a, .ufoots p {
 a:hover {
     text-decoration-line: none;
 }
-.search_results,
-.headers,
-aside span h1,
-a:hover,
-.headers h1 a,
-mark,
-section span h1
-{
-color:#f60;
+
+.search_results, .headers, aside span h1, a:hover, h1 > a, mark, section span h1 {
+    color: #f60;
 }
 
 body {
@@ -26,35 +20,31 @@ body {
     -moz-user-select: none;
     -ms-user-select: none;
     background: url("images/back.jpg") no-repeat;
-    /*background-size: cover;*/
     background-color: #d5d5d5;
 }
 
-.res{
-color:initial;
+.res {
+    color: initial;
 }
+
 #kino {
     color: white;
     text-shadow: 0.1em 0.1em #4a4a4a;
     padding-left: 1em;
-
-}
-
-.headers h1 a,
-h1 {
-    padding-left: 0.1em;
 }
 
 figcaption {
     font-size: 0.9em;
-}
-
-figure {
-    margin-left: 2em;
+    text-align: center;
 }
 
 img {
     height: 25em;
+}
+
+blockquote, figure {
+    margin: 0;
+    padding: 0;
 }
 
 .search-container input[type=search] {
@@ -62,7 +52,7 @@ img {
 }
 
 .search-container input {
-position: relative;
+    position: relative;
     right: 1em;
 }
 
@@ -71,129 +61,90 @@ position: relative;
     font-size: 1.53em;
     position: relative;
     right: 1.25em;
-
-
 }
 
 .search_results {
     padding-top: 1em;
     height: 3em;
     padding-left: 0.5em;
-    margin-top:1em;
+    margin-top: 1em;
 }
 
 .cap {
-    border-top-right-radius: 30px;
-    border-top-left-radius: 30px;
+    border-radius: 1em 1em 0 0;
     background-color: #585858;
     height: 8em;
     padding-bottom: .2em;
-    display:flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
-
-
-
 }
 
 .menubar_container {
     background-color: #525252;
     margin-top: 0;
-    padding-top: .2em;
-    padding-bottom: 0.2em;
-    height: 3em;
+    padding: 0;
 }
-.menubar_container ul>li{
-    list-style-type: none;
+
+.menubar_container ul > li a:hover {
+    color: white;
+    background: #636363;
+}
+
+.menubar_container ul > li {
     display: inline-flex;
+    margin: 0 3em;
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
+    justify-items: center;
     justify-content: space-between;
-    flex-direction: row;
-   padding: 40px;
-    font-size: larger;
-    margin-left: 10px ;
     position: relative;
-    bottom: 40px;
-
+    left: 4em;
 }
-
-.picturess {
-    margin-right: 5em;
-}
-
 
 mark {
     background: transparent;
-
 }
 
-/*.search_results,*/
 .headers,
 aside span h1,
 section span h1 {
     border-left: solid currentColor 5px;
-    padding-top: 1em;
+    font-size: 1em;
 }
 
 .foots {
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-radius: 0 0 1em 1em;
     background-color: #525252;
     height: 6em;
 }
 
-section span h1,
-aside span h1,
-.ufoots {
-    padding-left: 2em;
+.ufoots, .picturess, .headers, section span h1, aside span h1, .ufoots, .info1, .info2, .info3, .info4 {
+    padding: 1em;
 }
 
-.headers {
-    padding-left: 3em;
+.headers{
     background: linear-gradient(#f2f2f2, #dfdfdf);
     height: 3.5em;
-    padding-top: 0.2em;
-    padding-bottom: 1.1em;
 }
 
 aside span h1,
 section span h1 {
     background: linear-gradient(#f2f2f2, #dfdfdf);
     height: 2em;
-    margin-top: 0.5em;
 }
 
-.foots .ufoots .ufoots1{
+.foots .ufoots .ufoots1 {
     color: #d5d5d5;
     text-shadow: 0.05em 0.05em currentColor;
-    padding-top: .5em;
-}
-
-.ufoots address {
-    padding-top: .5em;
 }
 
 .ufoots .ufoots1 a {
     text-decoration-line: underline;
 }
 
-
-.info1,
-.info2,
-.info3,
-.info4 {
-    margin-top: 4em;
-    padding-left: 0.5em;
-}
-
-.info3 {
-    padding-bottom: 1em;
-}
-
-footer {
-    margin-top: 1em;
-}
-
-.triangle::after{
+.triangle::after {
     content: '';
     width: 0;
     height: 0;
@@ -204,53 +155,121 @@ footer {
     bottom: 11px;
     left: 5px;
 }
+
 .column {
-    width:70%;
-    max-width:1000px;
+    width: 70%;
+    max-width: 1000px;
     margin: 0 auto;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-around;
     min-width: 850px;
-
-
 }
-.containerhead{
+
+.containerhead {
     justify-content: flex-start;
     display: flex;
     align-items: stretch;
     flex-direction: column;
-
-
 }
-.centralcolomn{
-   display: flex;
-    flex-direction: row;
-    align-items: stretch;
-    justify-content: space-around;
+
+.centralcolomn {
+    display: flex;
+
     margin-top: 1em;
-
-}
-.leftcolomn{
-    display: flex;
-flex:3 1 400px;
-    background-color:white;
-}
-.rightcolomn{
-margin-left: 1em;
-    display: flex;
-flex-wrap: wrap;
-    flex:1 1 300px;
-    background:white;
-    min-height: auto;
-
 }
 
-.foooter{
+.leftcolomn {
     display: flex;
-    clear:both;
-justify-content: flex-end;
+    flex: 3 1 25em;
+    background-color: white;
+}
+
+.rightcolomn {
+    margin-left: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 10em;
+    background: white;
+}
+
+.foooter {
+    display: flex;
+    clear: both;
+    justify-content: flex-end;
     align-items: stretch;
     flex-direction: column;
+    margin-top: 1em;
+}
+table{
+    width: 100%;
+    text-align: center;
+    border: .2em solid transparent;
+}
 
+th{
+    background-color: #f60;
+    color:white;
+
+}
+
+tr{
+    background-color:#fbdecf
+}
+.form1{
+    background: #e6e6e6;
+    padding: 1em;
+    margin: 1em;
+}
+form .star{
+    color:red;
+}
+#surname,
+#emalee,
+textarea{
+    width: 100%;
+}
+video{
+    background: black;
+    display: block;
+    margin: 0 auto;
+    border: 0.1em solid #636363;
+}
+.information{
+    display: flex;
+}
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 0.1em dotted black;
+}
+
+.tooltip .tooltext {
+    position: absolute;
+    bottom: -4.3em;
+    left: 0.1em;
+    opacity: .9;
+    visibility: hidden;
+    width: 12em;
+    background-color: #353535;
+    color: white;
+    text-align: center;
+    border-radius: 1em;
+    padding: 0.7em 0;
+
+}
+
+.tooltip .tooltext::after {
+    content: "";
+    position: absolute;
+    bottom: 3.9em;
+    right: 10em;
+    border-width:0.4em ;
+    border-style: solid;
+    border-color:  transparent transparent #353535 transparent;
+    opacity: .9;
+}
+
+.tooltip:hover .tooltext {
+    visibility: visible;
 }
