@@ -1,8 +1,8 @@
 .blur-effect {
-    position: inherit; /* обязательно ставим fixed, absolute или relative иначе будет размываться все*/
-    background: inherit; /* мы же размываем бэкграунд*/
-    overflow: hidden; /* и только под объектом*/
-    visibility: visible; /* но сам он не должен быть нам виден*/
+    position: inherit;
+    background: inherit;
+    overflow: hidden; 
+    visibility: visible;
 }
 
 .blur-effect:hover {
