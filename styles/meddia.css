@@ -1,0 +1,196 @@
+a, .ufoots p {
+    text-decoration-color: #d5d5d5;
+    text-decoration-line: none;
+    color: #d5d5d5;
+}
+
+a:hover {
+    text-decoration-line: none;
+}
+
+.search_results, .headers, aside span h1, a:hover, h1 > a, mark, section span h1 {
+    color: #f60;
+}
+li{
+    list-style-type: none;
+    text-align: center;
+}
+
+body {
+    font-family: Tahoma;
+    font-size: 0.8em;
+    color: #333;
+    user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    background: url("images/back.jpg") no-repeat;
+    background-color: #d5d5d5;
+}
+
+.res {
+    color: initial;
+}
+
+#kino {
+    color: white;
+    text-shadow: 0.1em 0.1em #4a4a4a;
+    padding-left: 1em;
+}
+
+figcaption {
+    font-size: 0.9em;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+}
+
+blockquote, figure {
+    margin: 0;
+    padding: 0;
+}
+
+.search-container input[type=search] {
+    font-size: 1.5em;
+
+}
+
+.search-container input {
+    position: relative;
+    right: 1em;
+}
+.form2{
+    margin:0 0 0 3.5em;
+}
+.search-container button {
+    cursor: pointer;
+    font-size: 1.5em;
+    position: relative;
+    right: 1.25em;
+}
+
+.search_results {
+    padding-top: 1em;
+    height: 3em;
+    padding-left: 0.5em;
+    margin-top: 1em;
+}
+
+.cap {
+    border-radius: 1em 1em 0 0;
+    background-color: #585858;
+    height: 6em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.containerhead{
+    background-color: #585858;
+}
+
+.menubar_container {
+    background-color: #525252;
+
+}
+
+.menubar_container ul > li a:hover {
+    color: white;
+    background: #636363;
+}
+
+
+mark {
+    background: transparent;
+}
+
+.headers,
+aside span h1,
+section span h1 {
+    border-left: solid currentColor 5px;
+    font-size: 1em;
+}
+
+.foots {
+    border-radius: 0 0 1em 1em;
+    background-color: #525252;
+    height: 6em;
+}
+
+.ufoots, .picturess, .headers, section span h1, aside span h1, .ufoots, .info1, .info2, .info3, .info4 {
+    padding: 1em;
+}
+
+.headers{
+    background: linear-gradient(#f2f2f2, #dfdfdf);
+    height: 3.5em;
+}
+
+aside span h1,
+section span h1 {
+    background: linear-gradient(#f2f2f2, #dfdfdf);
+    height: 2em;
+}
+
+.foots .ufoots .ufoots1 {
+    color: #d5d5d5;
+    text-shadow: 0.05em 0.05em currentColor;
+}
+
+.ufoots .ufoots1 a {
+    text-decoration-line: underline;
+}
+
+table{
+    width: 100%;
+    text-align: center;
+    border: .2em solid transparent;
+}
+
+th{
+    background-color: #f60;
+    color:white;
+
+}
+
+tr{
+    background-color:#fbdecf
+}
+.form1{
+    background: #e6e6e6;
+    padding: 1em;
+    margin: 1em;
+}
+form .star{
+    color:red;
+}
+#surname,
+#emalee,
+textarea{
+    width: 100%;
+}
+video{
+    background: black;
+    display: block;
+    margin: 0 auto;
+    border: 0.1em solid #636363;
+}
+
+.tooltip:hover .tooltext {
+    visibility: visible;
+}
+textarea{
+    resize: none;
+}
+.centralcolomn{
+    background-color: white;
+}
+
+
+
+
+
+
+
