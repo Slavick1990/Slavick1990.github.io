@@ -21,6 +21,7 @@ body {
     -ms-user-select: none;
     background: url("images/back.jpg") no-repeat;
     background-color: #d5d5d5;
+    min-width: 350px;
 }
 
 .res {
@@ -234,7 +235,11 @@ textarea{
     resize: none;
 }
 
-
+iframe{
+    width:50em;
+    heigh:auto;
+    margin: 1em 0 1em 12em;
+}
 
 
 
