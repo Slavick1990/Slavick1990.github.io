@@ -42,6 +42,10 @@ figcaption {
 img {
     height: 25em;
 }
+img:hover{
+    cursor: zoom-in;
+}
+
 
 blockquote, figure {
     margin: 0;
