@@ -6,11 +6,11 @@
     <meta charset="UTF-8">
     <link href="styles/fontawesome-all.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"/>
-    <link href="styles/css.css" media="screen and (min-width:651px)" rel="stylesheet">
+    <link href="styles/css.css" media="screen and (min-width:701px)" rel="stylesheet">
     <link href="styles/effects.css" rel="stylesheet">
-    <base href="https://Slavick1990.github.io/index.html">
+
     <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="styles/meddia.css" media="screen and (max-width: 650px)">
+    <link rel="stylesheet" href="styles/meddia.css" media="screen and (max-width: 700px)">
     <title>Кино.бай</title>
 </head>
 <div class="column">
@@ -28,7 +28,13 @@
                         <defs>
                             <filter id="blur">
                                 <feGaussianBlur stdDeviation="1" />
-                                <feColorMatrix type="saturate" values="1.2" />
+                            </filter>
+                        </defs>
+                    </svg>
+                    <svg width="1px" height="1px">
+                        <defs>
+                            <filter id="blur1">
+                                <feColorMatrix type="saturate" values="3" />
                             </filter>
                         </defs>
                     </svg>
@@ -78,8 +84,9 @@
                             <div class="information">
                             <div class="picturess">
                                 <figure>
-                                    <img src="images/img1.jpg" title="Возвращение Короля" alt="Возвращение Короля"
-                                         usemap="#img1.jpg">
+
+                                    <img src="images/img1.jpg" title="Возвращение Короля"
+                                         usemap="#img1.jpg" class="imageZoom">
                                     <map name="img1.jpg">
                                         <area shape="rect" coords="299,117,355,256" alt="Гэндальф" target="_blank"
                                               href="http://ru.protagonist.wikia.com/wiki/%D0%93%D1%8D%D0%BD%D0%B4%D0%B0%D0%BB%D1%8C%D1%84">
@@ -135,7 +142,7 @@
                             <div class="information">
                             <div class="picturess">
                                 <figure>
-                                    <img src="images/img3.jpg" title="Две крепости" alt="Обложка фильма">
+                                    <img src="images/img3.jpg" title="Две крепости"  class="imageCombination">
                                     <figcaption>Две крепости</figcaption>
                                 </figure>
                             </div>
@@ -184,7 +191,7 @@
                             <div class="information">
                             <div class="picturess">
                                 <figure>
-                                    <img src="images/img2.jpg" title="Братство Кольца" alt="Обложка фильма">
+                                    <img src="images/img2.jpg" title="Братство Кольца" class="imageZoom">
                                     <figcaption>Братсво Кольца</figcaption>
                                 </figure>
                             </div>

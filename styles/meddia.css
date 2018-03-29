@@ -25,6 +25,7 @@ body {
     -ms-user-select: none;
     background: url("images/back.jpg") no-repeat;
     background-color: #d5d5d5;
+    min-width: 350px;
 }
 
 .res {
@@ -110,7 +111,7 @@ mark {
 aside span h1,
 section span h1 {
     border-left: solid currentColor 5px;
-    font-size: 1em;
+    font-size: .8em;
 }
 
 .foots {
@@ -119,13 +120,14 @@ section span h1 {
     height: 6em;
 }
 
-.ufoots, .picturess, .headers, section span h1, aside span h1, .ufoots, .info1, .info2, .info3, .info4 {
+.ufoots, .picturess,  section span h1, aside span h1, .ufoots, .info1, .info2, .info3, .info4 {
     padding: 1em;
 }
 
 .headers{
     background: linear-gradient(#f2f2f2, #dfdfdf);
-    height: 3.5em;
+    height: 3em;
+    padding: 0 1em 2.6em 1em;
 }
 
 aside span h1,
@@ -187,7 +189,11 @@ textarea{
 .centralcolomn{
     background-color: white;
 }
-
+iframe{
+    width:90%;
+    heigh: auto;
+    margin-left:2.5em;
+}
 
 
 
