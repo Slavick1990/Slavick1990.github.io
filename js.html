@@ -7,17 +7,47 @@
 <body>
 <button id="start">Start</button>
 <script>
-   button=window.document.getElementById('start');
-    button.onclick=function (){
-        var first=window.prompt('Enter a:',0);
-        var second=window.prompt ('Enter b:',0);
-        var third=window.parseInt(first)+window.parseInt(second);
-        if (third<50){
-            window.alert('Your results:'+third);
-        }else{
-            window.alert('Results:'+third);
+    'use strict';
+    var button = window.document.getElementById('start');
+    button.onclick = function homework() {
+        var firstQuestion;
+        var answerOne;
+        var secondQuestion;
+        var second;
+        var factorQuestion;
+        var factorAnswer;
+        var thirdQuestion;
+
+
+        do {
+            firstQuestion = window.prompt('1+1=?', 0);
+            if(firstQuestion!=2) {
+                answerOne = window.confirm('Try again');
+                if (answerOne == false)
+                    break;
+            }
         }
-    };
+        while (firstQuestion != '2');
+
+        if (firstQuestion == 2) {
+            secondQuestion = window.confirm('You are right. Next question?');
+            factorQuestion = Math.floor(Math.random() * 20+1);
+            if (secondQuestion) {
+                thirdQuestion = window.prompt('f(' + factorQuestion + ')?')
+            }
+        }
+        function factorial(factorQuestion) {
+            return (factorQuestion != 1) ? factorQuestion * factorial(factorQuestion - 1) : 1;
+        }
+
+        if (factorQuestion != thirdQuestion) {
+            alert('wrong')
+        }
+        if (factorQuestion = thirdQuestion) {
+            alert('Great');
+        }
+
+    }
 </script>
 </body>
 </html>
