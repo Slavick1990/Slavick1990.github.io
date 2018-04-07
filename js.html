@@ -21,7 +21,7 @@
 
         do {
             firstQuestion = window.prompt('1+1=?', 0);
-            if(firstQuestion!=2) {
+            if (firstQuestion != 2) {
                 answerOne = window.confirm('Try again');
                 if (answerOne == false)
                     break;
@@ -31,22 +31,19 @@
 
         if (firstQuestion == 2) {
             secondQuestion = window.confirm('You are right. Next question?');
-            factorQuestion = Math.floor(Math.random() * 20+1);
+            factorQuestion = Math.floor(Math.random() * 4 + 1);
             if (secondQuestion) {
                 thirdQuestion = window.prompt('f(' + factorQuestion + ')?')
+                if (factorQuestion != thirdQuestion) {
+                    alert('wrong');
+                }
+                else(factorQuestion == thirdQuestion)
+                alert('Great');
             }
-        }
         function factorial(factorQuestion) {
             return (factorQuestion != 1) ? factorQuestion * factorial(factorQuestion - 1) : 1;
         }
-
-        if (factorQuestion != thirdQuestion) {
-            alert('wrong')
-        }
-        if (factorQuestion = thirdQuestion) {
-            alert('Great');
-        }
-
+    }
     }
 </script>
 </body>
