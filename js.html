@@ -8,8 +8,8 @@
 <button id="start">Start</button>
 <script>
     'use strict';
-    var button=window.document.getElementById('start');
-    button.onclick=function homework (){
+    var button = window.document.getElementById('start');
+    button.onclick = function homework() {
         var firstQuestion;
         var answerOne;
         var secondQuestion;
@@ -19,21 +19,33 @@
         var thirdQuestion;
 
 
+        do {
             firstQuestion = window.prompt('1+1=?', 0);
+            if(firstQuestion!=2) {
+                answerOne = window.confirm('Try again');
+                if (answerOne == false)
+                    break;
+            }
+        }
+        while (firstQuestion != '2');
 
-            if (firstQuestion!=2) {
-                answerOne = window.confirm('Try again')
-            } else{
-            secondQuestion=window.confirm('You are right. Next question?');
-                factorQuestion=Math.floor(Math.random()*3);
-            if(secondQuestion){thirdQuestion=window.prompt('f('+factorQuestion+')?')}
+        if (firstQuestion == 2) {
+            secondQuestion = window.confirm('You are right. Next question?');
+            factorQuestion = Math.floor(Math.random() * 20+1);
+            if (secondQuestion) {
+                thirdQuestion = window.prompt('f(' + factorQuestion + ')?')
+            }
         }
         function factorial(factorQuestion) {
-            return (factorQuestion!= 1) ? factorQuestion * factorial(factorQuestion - 1) : 1;
+            return (factorQuestion != 1) ? factorQuestion * factorial(factorQuestion - 1) : 1;
         }
-if(factorQuestion!=thirdQuestion){alert('wrong')}
- if(factorQuestion=thirdQuestion){alert('Great');
-}
+
+        if (factorQuestion != thirdQuestion) {
+            alert('wrong')
+        }
+        if (factorQuestion = thirdQuestion) {
+            alert('Great');
+        }
 
     }
 </script>
