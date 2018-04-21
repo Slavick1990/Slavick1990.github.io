@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="hw5.css">
+    <script>
+        'use strict';
+        window.onload = function () {
+
+            var buttonClick = document.getElementById('btn');
+            var b = document.getElementById('name');
+            var c = document.getElementById('emalee').value;
+            var textArea = document.getElementById('comment-field').value;
+
+            buttonClick.onclick = function () {
+                var container=document.createElement('div');
+                container.className='nameUser';
+
+                var pFirst = document.createElement('p');
+                pFirst.className = 'p1style';
+                pFirst.innerHTML = b;
+                container.appendChild(pFirst);
+                document.body.appendChild(container);
+                console.log(b);
+                console.log(c);
+
+
+                var pSecond = document.createElement('p');
+                pSecond.className = 'p2style';
+                container.appendChild(pSecond);
+                pSecond.innerText = textArea;
+
+                var per =document.getElementById('sf')
+                var par =document.getElementById('inputs')
+                par.insertBefore(container, per);
+
+            }
+
+        }
+    </script>
+</head>
+<body>
+<form action="https://Slavick1990.github.io/index.html" method="post" class="form1" id="inputs">
+    <label for="name" id="sf">Имя Фамилия<span class="star">*</span></label><br/>
+
+    <input type="text" id="name" required/><br/><br/>
+    <label for="emalee">Почта<span class="star">*</span></label><br/><input type="email" id="emalee"
+                                                                            placeholder="example@gmail.com"
+                                                                            required/><br/><br/>
+
+
+    <br/>
+    Комментарий<span class="star">*</span><br/>
+    <textarea  id="comment-field" rows="7" cols="50">
+
+            </textarea><br/>
+    <input type="button" id="btn" value="Добавить комментарий"/>
+</form>
+
+
+</body>
+</html>
