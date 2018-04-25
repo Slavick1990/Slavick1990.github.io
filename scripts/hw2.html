@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js</title>
+</head>
+<body>
+<button id="start">Start</button>
+<script>
+    'use strict';
+    var button = window.document.getElementById('start');
+    button.onclick = function homework() {
+        var firstQuestion;
+        var answerOne;
+        var secondQuestion;
+        var second;
+        var factorQuestion;
+        var factorAnswer;
+        var thirdQuestion;
+        do {
+            firstQuestion = window.prompt('1+1=?', 0);
+            if (firstQuestion != 2) {
+                answerOne = window.confirm('Try again');
+                if (answerOne == false)
+                    break;
+            }
+        }
+        while (firstQuestion != '2');
+        if (firstQuestion == 2) {
+            secondQuestion = window.confirm('You are right. Next question?');
+            factorQuestion = Math.floor(Math.random() * 4 + 1);
+            if (secondQuestion) {
+                thirdQuestion = window.prompt('f(' + factorQuestion + ')?')
+                if (factorQuestion != thirdQuestion) {
+                    alert('wrong');
+                }
+                else(factorQuestion == thirdQuestion)
+                alert('Great');
+            }
+            function factorial(factorQuestion) {
+                return (factorQuestion != 1) ? factorQuestion * factorial(factorQuestion - 1) : 1;
+            }
+        }
+    }
+</script>
+</body>
+</html>

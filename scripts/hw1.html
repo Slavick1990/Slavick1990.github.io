@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js</title>
+</head>
+<body>
+<button id="start">Start</button>
+<script>
+    button=window.document.getElementById('start');
+    button.onclick=function (){
+        var first=window.prompt('Enter a:',0);
+        var second=window.prompt ('Enter b:',0);
+        var third=window.parseInt(first)+window.parseInt(second);
+        if (third<50){
+            window.alert('Your results:'+third);
+        }else{
+            window.alert('Results:'+third);
+        }
+    };
+</script>
+</body>
+</html>
