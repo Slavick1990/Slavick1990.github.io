@@ -19,8 +19,7 @@ body {
     user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
-    background: url("images/back.jpg") no-repeat;
-    background-color: #d5d5d5;
+    background: url(https://raw.githubusercontent.com/Slavick1990/Slavick1990.github.io/master/images/back.jpg) no-repeat;
     min-width: 350px;
 }
 
