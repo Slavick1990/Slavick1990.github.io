@@ -1,7 +1,7 @@
 
 'use strict';
 window.onload=function () {
-    
+
     var searchResults;
     var req = new XMLHttpRequest();
     req.open("GET", '/data.json', true);
@@ -83,7 +83,7 @@ function createDetails(details) {
         '<figcaption>Обложка фильма</figcaption>';
 
     var text = document.createElement('div');
-    text.className='info1'
+    text.className='info1';
 
     var description = document.createElement('section');
     description.innerHTML = '<h1>Описание</h1><p>' + details.description + '</p>';
@@ -129,7 +129,7 @@ function createDetails(details) {
 //     Бойд,
 //         Энди
 //     Серкис,
-//         Миранда Отто,Бернард Хилл</p>
+//          Миранда Отто,Бернард Хилл</p>
 //     </section>
 //     </div>
 //     </div>
@@ -154,11 +154,8 @@ function createFooter(footer) {
 
 window.onload = function () {
     var main = document.querySelector('main');
-    // var main = document.getElementsByTagName('main')[0];
+    // var main = document.getElementsByTagName('main')[0];3
 
-    for (var i = 0; i < searchResults.length; i++) {
-        main.appendChild(createArticle(searchResults[i]));
-    }
 
 
 }
