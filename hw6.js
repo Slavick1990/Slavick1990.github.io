@@ -1,21 +1,26 @@
 
 'use strict';
+window.onload=function () {
+    
+    var searchResults;
+    var req = new XMLHttpRequest();
+    req.open("GET", '/data.json', true);
+    req.onreadystatechange = function () {
+        if (req.readyState == 4) {
+            if (req.status == 200) {
+                searchResults = JSON.parse(req.responseText);
 
-var results;
-var req = new XMLHttpRequest();
-req.open("GET", '/data.json', true);
-req.onreadystatechange = function () {
-    if (req.readyState ==4 ){
-        if(req.status==200){
-            results = JSON.parse(req.responseText);
+                for (var i = 0; i < searchResults.length; i++) {
+                    main.appendChild(createArticle(searchResults[i]));
+                }
+            }
+            else {
+                console.log(req.status, 'error №');
+            }
         }
-        else {
-            console.log(req.status, 'error №');
-        }
-    }
+    };
+    req.send(null);
 };
-req.send(null);
-
 
 function createArticle(film) {
     var article = document.createElement('article');
