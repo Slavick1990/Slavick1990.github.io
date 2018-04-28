@@ -1,5 +1,12 @@
 
 'use strict';
+// var $j=jQuery.noConflict()
+
+// $.getJSON('/data.json', function (requests) {
+//     ('main').append("createArticle(searchResults[i])")
+//         for (var i = 0; i < searchResults.length; i++) ;
+//
+// })
 window.onload=function () {
 
     var searchResults;
@@ -23,7 +30,6 @@ window.onload=function () {
     };
     req.send(null);
 };
-
 
 $( function createArticle (film, queryFunFilm) {
     $('<article>').append(createHeader(film.header),createDetails(film.details),createFooter(film.footer))
