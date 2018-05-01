@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    "use strict"
+    function Animal(name) {
+        this.name = name;
+    }
+    Animal.prototype.eat = function(food) {
+        this.food = food;
+        console.log( "eat " + this.food);
+    };
+    function Lion(name){
+        Animal.call(this, name);
+    }
+    Lion.prototype = Object.create(Animal.prototype);
+    Lion.prototype.run = function() {
+        console.log( "running " );
+    };
+
+    function Rabbit(name) {
+        Animal.call(this, name);
+    }
+
+    Rabbit.prototype = Object.create(Animal.prototype);
+    Rabbit.prototype.jump = function() {
+        console.log( "jumping" );
+    };
+
+</script>
+    
+</body>
+</html>
