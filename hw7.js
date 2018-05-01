@@ -31,10 +31,9 @@ window.onload=function () {
     req.send(null);
 };
 
-$( function createArticle (film, queryFunFilm) {
-    $('<article>').append(createHeader(film.header),createDetails(film.details),createFooter(film.footer))
+$( function createArticle (film) {
+   return $('<article>').append([createHeader(film.header),createDetails(film.details),createFooter(film.footer)])
 
-    return queryFunFilm()
 })
 
 // function createArticle(film) {
@@ -47,12 +46,13 @@ $( function createArticle (film, queryFunFilm) {
 //         return article;
 // }
 $(function createHeader (header, queryFunHeader) {
-    $('<header>').addClass("headers")
+    var titleParts = header.title.split(':')
+   $('<header>').addClass("headers").appendTo('body')
     $('<div>').addClass("blur-effect").appendTo('header')
     $('<h1>').appendTo('div')
-    $('<mark>').appendTo('h1')
-    $('<a>').attr("href", (header.url)).appendTo('h1')
-    return queryFunHeader()
+    $('<mark>').text(titleParts[0]).appendTo('h1')
+    $('<a>').attr("href", 'header.url').text(':' + titleParts[1]).appendTo('h1')
+    return ('header')
 
 // <header class="headers">
 //         <div class="blur-effect">
@@ -64,23 +64,44 @@ $(function createHeader (header, queryFunHeader) {
 //     // </header>
 });
 
-$(function createDetails (details, queryFunDetails) {
-    $('<div>').addClass("information")
-    $('<div>').addClass("pictures").appendTo('div')
-    $('<figure>').appendTo('div.pictures')
-    $('<img>').addClass("imageZoom").attr("src",(details.poster)).appendTo('figure')
-    $('<figcaption>').appendTo('figure')
+$(function createDetails (details) {
+    // $('<div>').addClass("information")
+    // $('<div>').addClass("pictures").appendTo('div')
+    // $('<figure>').appendTo('div.pictures')
+    // $('<img>').addClass("imageZoom").attr("src",(details.poster)).appendTo('figure')
+    // $('<figcaption>').appendTo('figure')
+    //
+    // $('<div>').addClass("info1").appendTo('div.information')
+    // $('<section>').appendTo('div.info1').html('<h1>Описание</h1><p>' + details.description + '</p>')
+    // $('<section>').appendTo('div.info1').html('<h1>Актеры</h1><p>' + details.actors + '</p>')
+    //  return ('div.information')
 
-    $('<div>').addClass("info1").appendTo('div.information')
-    $('<section>').appendTo('div.info1').html('<h1>Описание</h1><p>' + details.description + '</p>')
-    $('<section>').appendTo('div.info1').html('<h1>Актеры</h1><p>' + details.actors + '</p>')
-    return queryFunDetails()
+    $('<div>')
+        .attr("class", "information")
+        .append([
+            $('<div>').attr("class", "pictures")
+                .append(
+                    $('figure')
+                        .append([
+                            $('<img>').addClass("imageZoom").attr("src","details.poster"),
+                            $('<figcaption>')
+                        ])
+                ),
+            $('<div>').attr("class", "info1")
+                .append([
+                    $('<section>').html('<h1>Описание</h1><p>' + details.description + '</p>'),
+                    $('<section>').html('<h1>Актеры</h1><p>' + details.actors + '</p>')
+                ])
+            ]
+        )
+
+
 })
 
-$( function createFooter(footer,queryFunFooter) {
+$( function createFooter(footer) {
     $('<div>').addClass("info3").html('<p>'+'<b>Год</b>'+footer.time+'<b>Оценка <span class="tooltip">IMDb:<span class="tooltext">Internet Movie Database</span> </span></b>' +footer.imdb.estimate+
         '<small>'+footer.imdb.add +'</small>'+'<b>Бюджет:</b>'+footer.budget+'<b>Страна:</b>'+footer.country)
-    return queryFunFooter()
+    return ('div.info3')
 })
 
 
